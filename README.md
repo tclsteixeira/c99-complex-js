@@ -3,7 +3,9 @@
 **High-precision complex number library for JavaScript**  
 Supports a wide range of arithmetic, transcendental, and trigonometric operations, compliant with C99 standards.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-lightgrey.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
 [![NPM version](https://img.shields.io/npm/v/c99-complex.js.svg)](https://www.npmjs.com/package/c99-complex.js)
 
 ---
