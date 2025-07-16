@@ -1,0 +1,36 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# Optional: lockfile (only if your workflow excludes it)
+# package-lock.json
+
+# Build artifacts
+dist/
+*.tsbuildinfo
+
+# Coverage reports (if any)
+coverage/
+
+# Environment
+.env
+.env.*
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Ignore general VSCode settings, extensions, and workspace history
+.vscode/settings.json
+.vscode/extensions.json
+.vscode/*.code-workspace
+
+# do not exclude if working with collaborators who use VS Code/VSCodium
+#.vscode/launch.json   
+#.vscode/tasks.json   
+
+# OS
+.DS_Store
+Thumbs.db

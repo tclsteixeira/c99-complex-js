@@ -1,0 +1,46 @@
+# Tests (not needed in npm)
+tests/
+test/
+*.test.js
+*.spec.js
+*.cmp.js
+
+# Source code (optional if only publishing `dist/`)
+src/
+!src/examples/  # Include examples for users
+
+# Dev configs
+rollup.config.*
+webpack.config.*
+tsconfig.json
+jsconfig.json
+
+# TypeScript output cleanup
+dist/types/
+*.tsbuildinfo
+
+# Tooling/CI
+.env*
+.vscode/
+.idea/
+*.swp
+*.swo
+.travis.yml
+.github/
+.npmrc
+
+# Docs for devs only (keep README)
+README.txt
+CHANGELOG.md
+CONTRIBUTING.md
+*.md
+!README.md
+
+# Version control
+.git/
+.gitignore
+.npmignore
+
+# Optional: remove logs or temp
+*.log
+*.tmp
