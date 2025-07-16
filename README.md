@@ -6,7 +6,8 @@ Supports a wide range of arithmetic, transcendental, and trigonometric operation
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![License: BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-lightgrey.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
-[![NPM version](https://img.shields.io/npm/v/c99-complex.js.svg)](https://www.npmjs.com/package/c99-complex.js)
+[![NPM version](https://img.shields.io/npm/v/c99-complex.svg)](https://www.npmjs.com/package/c99-complex)
+[![GitHub Repo](https://img.shields.io/badge/github-tclsteixeira%2Fc99--complex--js-blue.svg?logo=github)](https://github.com/tclsteixeira/c99-complex-js)
 
 ---
 
@@ -37,7 +38,7 @@ While exact compliance with C99 across all edge cases is challenging (and even m
 ## Installation
 
 ```bash
-npm install c99-complex.js
+npm install c99-complex
 ```
 
 The npm package only includes the dist/ output — not the source or tests.
@@ -45,21 +46,33 @@ For full source and tests, see the GitHub repo.
 
 ## Usage
 
-### Import (ES Module)
+### Option 1: Installed via NPM (recommended)
 
-```javascript
-// ESM or in browser with <script type="module">
-import { Complex } from 'c99-complex.js';
-
-// Create a complex number
-const z = new Complex(3, 4);  // 3 + 4i
-
-console.log(z.abs());         // 5
-console.log(z.arg());         // 0.927... radians
-console.log(z.toString());    // "3 + 4i"
+```bash
+npm install c99-complex
 ```
 
-## Running Examples in the Browser
+```javascript
+import { Complex } from 'c99-complex';
+
+const a = new Complex(2, 3);
+const b = new Complex(1, -1);
+console.log(a.add(b).toString()); // 3 + 2i
+```
+
+### Option 2: Using Direct File (from GitHub clone or CDN)
+
+```javascript
+<script type="module">
+  import { Complex } from './dist/c99-complex.esm.js';
+
+  const a = new Complex(2, 3);
+  const b = new Complex(1, -1);
+  console.log(a.add(b).toString()); // 3 + 2i
+</script>
+```
+
+## Running in the Browser
 
 Since ES modules need to be served over HTTP, you can run a local server to test the examples:
 
@@ -68,17 +81,42 @@ npm install -g http-server
 http-server ./src/examples
 ```
 
+### Alternatively, you can use
+
+```bash
+# With Python 3
+python -m http.server
+
+# Or without global install
+npx serve ./src/examples
+```
+
 ### Then open your browser at
 
 ```bash
 http://localhost:8080/test-browser.html
 ```
 
-### Here’s an example snippet you might find in your HTML files
+### Option 1: Local from GitHub or manually downloaded files
+
+Make sure you've built or copied `dist/c99-complex.esm.js`, then open an HTML file like this:
 
 ```html
 <script type="module">
-  import { Complex } from './c99-complex.esm.js';  // Adjust path if needed
+  import { Complex } from './dist/c99-complex.esm.js';  // Adjust path if needed
+
+  const z = new Complex(2, -1);
+  console.log(z.exp().toString());
+</script>
+```
+
+### Option 2: From CDN (no install needed)
+
+Try directly in a browser via unpkg:
+
+```html
+<script type="module">
+  import { Complex } from 'https://unpkg.com/c99-complex@latest/dist/c99-complex.esm.js';
 
   const z = new Complex(2, -1);
   console.log(z.exp().toString());
