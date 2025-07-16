@@ -2,7 +2,6 @@
   "name": "c99-complex",
   "version": "1.0.0",
   "type": "module",
-
   "main": "./dist/c99-complex.esm.js",
   "exports": {
     ".": {
@@ -19,7 +18,7 @@
     "test:ci": "vitest run"
   },
   "repository": {
-    "url": "https://github.com/tclsteixeira/c99-complex-js.git"
+    "url": "git+https://github.com/tclsteixeira/c99-complex-js.git"
   },
   "keywords": [
     "complex",
