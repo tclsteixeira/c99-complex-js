@@ -1565,7 +1565,7 @@ export class Complex {
   }
 
   //-----------------------------------
-  // TRIGNOMETRIC FUNCTIONS
+  // TRIGONOMETRIC FUNCTIONS
   //-----------------------------------
 
   /**
@@ -2256,7 +2256,7 @@ export class Complex {
   }
 
   //-----------------------------------
-  // HYPERBOLIC TRIGNOMETRIC FUNCTIONS
+  // HYPERBOLIC TRIGONOMETRIC FUNCTIONS
   //-----------------------------------
 
   /**
@@ -2900,7 +2900,7 @@ export class Complex {
   }
 
   //-----------------------------------
-  // INVERSE TRIGNOMETRIC FUNCTIONS
+  // INVERSE TRIGONOMETRIC FUNCTIONS
   //-----------------------------------
 
   /**
@@ -3561,7 +3561,7 @@ export class Complex {
   }
 
   //-------------------------------------------
-  // INVERSE TRIGNOMETRIC HYPERBOLIC FUNCTIONS
+  // INVERSE TRIGONOMETRIC HYPERBOLIC FUNCTIONS
   //-------------------------------------------
 
   /**

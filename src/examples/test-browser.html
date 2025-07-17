@@ -7,11 +7,20 @@
   </head>
   <body>
     <h1>Complex.js ESM Module Example</h1>
-    <h3>Prior to run this demo, in command prompt terminal and in root project folder type 'npx http-server' without quotes to run server.</h3>
-    <h3>Then type 'http://localhost:8080/src/examples/test-browser.html' address in the browser.<h3>
+    <h3>Prior to run this demo, in command prompt terminal and in root project folder start http server (ex: 'npx http-server' without quotes).</h3>
+    <h3>Then type 'http://localhost:8080/src/examples/test-browser.html' or other file path with example file address in the browser.<h3>
     <pre id="output"></pre>
 
+    <!--
+      Note: This example works when running from the GitHub source.
+      If you installed via NPM, you must copy the ESM file manually from:
+      
+        node_modules/c99-complex/dist/c99-complex.esm.js
+      
+      into your project folder, and adjust the path below accordingly.
+    -->
     <script type="module">
+      
       import { Complex } from "../../dist/c99-complex.esm.js"; // adjust path as needed
 
       const a = new Complex(4, -2);
@@ -20,8 +29,8 @@
 
       const output = document.getElementById("output");
       output.textContent = `a = ${a.toString()}
-b = ${b.toString()}
-a + b = ${sum.toString()}`;
+      b = ${b.toString()}
+      a + b = ${sum.toString()}`;
     </script>
   </body>
 </html>
